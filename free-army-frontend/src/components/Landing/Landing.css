@@ -1,0 +1,196 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us {
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgb(0, 130, 170),#cbd5e000);
+  position: relative;
+  z-index: 9;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.comp-name {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.join-btn {
+  margin-top: 30px;
+  min-width: 135px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff 100%);
+  background-size: 200% auto;
+  padding: 0px 15px;
+  color: #222222;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 2.4rem;
+  outline: none !important;
+  box-shadow: 0px 10px 30px rgba(163, 255, 177, 0.2);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  text-transform: uppercase;
+  border: none;
+}
+.overlay {
+  z-index: -1;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(0, 130, 170),#cbd5e000);
+}
+
+.intro-section {
+  padding-top: 150px;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+nav {
+  z-index: 9;
+  background: #2c2172;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, navy 0%, blue 20%, transparent 100%);
+}
+.text-right {
+  text-align: right;
+}
+.align-center {
+  align-items: center;
+}
+
+.join-btn:hover {
+  background-position: right center;
+  color: #22195e;
+}
+#root {
+  height: 100%;
+}
+.p-10 {
+  padding: 10px;
+}
+
+.intro {
+  color: #fff;
+  height: 100%;
+  background: url("../../assets/images/libertystatue.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 8;
+}
+
+.comp-desc {
+  max-width: 700px;
+  margin: 20px auto;
+}
+.brave-section {
+  height: 100%;
+  /*padding: 40px;*/
+}
+.brave-content {
+  height: 100%;
+  /*background: linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);*/
+  background: url("./../../assets/images/desktop-devices-dark.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 9;
+}
+.right-img {
+  margin-left: 0px;
+  position: relative;
+  /*left: 70px;*/
+}
+.brave-img-wrapper {
+  /*padding: 10px;*/
+  /*border: 2px dashed #46cdf9;*/
+}
+.brave-img-wrapper img {
+  margin: auto;
+    /*transform: rotateY(45deg);*/
+    /*animation: rotateAnimation 1s linear infinite;*/
+}
+
+
+.logo-style {
+  width:4.5rem;
+  display: inline;
+  margin-top: -.5rem;
+}
+.logo-text-style {
+  align-items: center;
+  display: inline;
+  font-size: 1.5rem;
+  font-family: system-ui;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-wrapper, .comp-name {
+    text-align: center;
+    align-items: center;
+  }
+  .intro {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .btn-wrapper {
+    display: none;
+  }
+  .nav-button-container {
+    display: none;
+  }
+  .logo-text-style {
+    padding-right: 5px;
+  }
+  .intro-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 993px){
+  .brave-section {
+    text-align: center;
+  }
+  .brave-img-wrapper {
+    border: none;
+  }
+  .right-img {
+    left: unset;
+  }
+}

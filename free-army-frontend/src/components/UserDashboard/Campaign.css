@@ -1,0 +1,84 @@
+.browser-frame-wrapper {
+	padding: 30px;
+	height: calc(100vh - 80px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.browser-frame {
+	height: 100%;
+}
+.browser-body {
+	width: 100%;
+    height: calc(100% - 64px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    color: #000;
+    background-color: #f7f7f7;
+}
+.browser-header {
+	min-height: 44px;
+	position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 30px;
+    z-index: 9;
+    -webkit-transition: visibility .2s ease;
+    transition: visibility .2s ease;
+    background-color: #564d7a;
+}
+.browser-header .window-control {
+	width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+.browser-header .window-control:not(:last-of-type) {
+	margin-right: 4px;
+}
+.browser-header .window-control:first-child {
+	background-color: #ff6868;
+}
+.browser-header .window-control:nth-child(2) {
+	background-color: #ffe411;
+}
+.browser-header .window-control:nth-child(3) {
+	background-color: #15bb8a;
+}
+.frame-link {
+	display: -webkit-box;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    justify-content: left;
+    flex: 1 1;
+    max-width: 100%;
+    height: 32px;
+    margin-left: 16px;
+    padding: 0 16px;
+    border-radius: 6px;
+    overflow-x: hidden;
+    border-left: 1px solid #354168;
+    word-break: break-all;
+    color: #3e3e40;
+    background-color: #fff;
+    white-space: nowrap;
+    line-height: 2.5rem;
+    font-family: Roboto,sans-serif;
+    font-size: .875rem;
+    cursor: text;
+}
+.frame-link > div {
+	display: -webkit-box!important;
+    display: flex!important;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap
+}

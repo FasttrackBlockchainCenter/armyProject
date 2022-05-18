@@ -1,0 +1,16 @@
+.MuiButton-containedPrimary:hover {
+    background-color: rgb(24, 114, 69) !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+    color: rgb(24, 114, 69) !important;
+}
+
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(24, 114, 69) !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: rgb(24, 114, 69) !important;
+}

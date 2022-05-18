@@ -1,0 +1,102 @@
+.user-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 680px;
+    min-width: 264px;
+}
+.user-card,
+.web3-card {
+    padding: 24px;
+    background-color: #fff;
+    color: #636d72;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+    min-height: 180px;
+}
+.user-card .img-container {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    margin-left: 24px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 1em;
+}
+.user-card .info-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+.user-card .info-container > h1 {
+    font-size: 28px;
+    line-height: 32px;
+    color: #2e3c42;
+    font-weight: 700;
+}
+.user-card .info-container > p {
+    margin-top: 8px;
+}
+.wallet-connect,
+.deactivate-button {
+    background-color: transparent;
+    border-radius: 2rem;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    min-width: 140px;
+    transition: .3s;
+    margin: 0 auto;
+    display: block;
+}
+.deactivate-button {
+    border-color: #fd397a;
+    color: #fd397a;
+}
+.deactivate-button:hover,
+.deactivate-button:focus {
+    border-color: #fc0758;
+    color: #fc0758;
+    outline: none;
+}
+.wallet-connect {
+    border-color: rgb(47, 128, 237);
+    color: rgb(47, 128, 237);
+}
+.wallet-connect:hover,
+.wallet-connect:focus {
+    outline: none;
+}
+.wallet-data {
+    padding: 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(225, 225, 225);
+    border-image: initial;
+    border-radius: 20px;
+    margin: 0 auto 15px;
+}
+.wallet-data .account a {
+    color: rgb(47, 128, 237);
+}
+.wallet-data .account a:hover,
+.wallet-data .account a:focus {
+    text-decoration: underline;
+}
+.wallet-subtitle {
+    font-weight: 500;
+    margin-right: 10px;
+}
+.web3-card .default {
+    min-height: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
